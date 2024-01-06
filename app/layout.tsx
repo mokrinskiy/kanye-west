@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import PageScrollProgress from "@/components/PageScrollProgress";
 
 export const abril_fatface = Abril_Fatface({
     weight: "400",
@@ -29,7 +30,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${abril_fatface.variable} ${poppins.variable}`}>
+            <body
+                className={cn(
+                    "font-poppins",
+                    abril_fatface.variable,
+                    poppins.variable
+                )}
+            >
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -38,6 +45,7 @@ export default function RootLayout({
                 >
                     <Navbar />
                     {children}
+                    <PageScrollProgress />
                 </ThemeProvider>
             </body>
         </html>
