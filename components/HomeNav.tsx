@@ -1,7 +1,6 @@
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { nav_items } from "@/contentful/constants";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,8 +33,7 @@ export default function HomeNav() {
                     ref={containerRef}
                     className="h-full relative w-[40%] z-[2]"
                 >
-                    <Image
-                        fill={true}
+                    <img
                         className="object-cover w-full h-full"
                         src={nav_items[selectedProject].src}
                         alt="nav_image"

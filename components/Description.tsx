@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Separator } from "./ui/separator";
 
 const phrases = [
-    "American rapper, singer, songwriter, record producer, and fashion designer.",
-    "American rapper, singer, songwriter, record producer, and fashion designer.",
-    "American rapper, singer, songwriter, record producer, and fashion designer.",
-    "American rapper, singer, songwriter, record producer, and fashion designer.",
+    "American rapper, singer, songwriter, record producer, and fashion designer",
+    "One of the world's best-selling music artists with 160 million records sold",
+    "West has won 24 Grammy Awards, the joint tenth-most of all time",
 ];
 
 const Description = () => {

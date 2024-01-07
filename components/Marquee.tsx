@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import gsap from "gsap";
 import React, { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -9,20 +9,6 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
     const slider = useRef(null);
     let xPercent = 0;
     let direction = 1;
-
-    useLayoutEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        requestAnimationFrame(animate);
-        gsap.to(slider.current, {
-            scrollTrigger: {
-                trigger: document.documentElement,
-                start: 0,
-                end: window.innerHeight,
-                scrub: true,
-            },
-            x: "+=300px",
-        });
-    }, []);
 
     const animate = () => {
         if (xPercent < -100) {
@@ -35,7 +21,24 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
         requestAnimationFrame(animate);
         xPercent += 0.1 * direction;
     };
-    
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        requestAnimationFrame(animate);
+        const scrollTrigger = gsap.to(slider.current, {
+            scrollTrigger: {
+                trigger: document.documentElement,
+                start: 0,
+                end: window.innerHeight,
+                scrub: true,
+            },
+            x: "+=300px",
+        });
+        return () => {
+            scrollTrigger.kill();
+        };
+    }, [direction, animate]);
+
     return (
         <div className="absolute max-sm:top-[100px] max-md:top-[170px] top-[100px]">
             <div ref={slider} className="relative whitespace-nowrap flex">
