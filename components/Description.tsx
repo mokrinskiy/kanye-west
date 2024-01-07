@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Separator } from "./ui/separator";
 
 const phrases = [
     "American rapper, singer, songwriter, record producer, and fashion designer.",
@@ -11,10 +12,14 @@ const phrases = [
 const Description = () => {
     useEffect(() => {});
     return (
-        <div className=" mt-[30vw] ml-[10vw] mb-[20vh]">
-            {phrases.map((item, index) => (
-                <AnimatedText key={index}>{item}</AnimatedText>
-            ))}
+        <div className="h-screen w-full flex items-center px-[6vw]">
+            <div className="flex justify-between items-center w-full">
+                <div className="flex items-start flex-col w-full border-r-[1px] border-foreground">
+                    {phrases.map((item, index) => (
+                        <AnimatedText key={index}>{item}</AnimatedText>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };
@@ -24,8 +29,8 @@ function AnimatedText({ children }: { children: React.ReactNode }) {
         <motion.p
             initial={{ x: "-300px", opacity: 0 }}
             whileInView={{ x: "0px", opacity: 1 }}
-            transition={{duration: 1.25}}
-            className="text-2xl font-poppins m-0"
+            transition={{ duration: 1.25 }}
+            className="text-2xl max-lg:text-xl font-poppins m-0"
         >
             {children}
         </motion.p>

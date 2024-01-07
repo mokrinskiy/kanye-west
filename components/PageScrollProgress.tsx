@@ -10,7 +10,7 @@ const PageScrollProgress = () => {
     });
     return (
         <motion.div
-            className="fixed bottom-0 left-0 right-0 h-[5px] bg-foreground origin-left"
+            className="fixed bottom-0 left-0 right-0 h-[5px] bg-foreground origin-left z-50"
             style={{ scaleX }}
         />
     );

@@ -1,7 +1,27 @@
-export const navbar_link_items = [
-    { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
-    { title: "Musical Style", link: "/musical-style" },
-    { title: "Gallery", link: "/gallery" },
-    { title: "Discography", link: "/discography" },
+export const nav_items = [
+    {
+        title: "Biography",
+        src: "/images/bio.jpg",
+        link: "/about",
+    },
+    {
+        title: "Music",
+        src: "/images/music.png",
+        link: "/music",
+    },
+    {
+        title: "Fashion",
+        src: "/images/fashion.png",
+        link: "/fashion",
+    },
+    {
+        title: "Performances",
+        src: "/images/performances.png",
+        link: "/performances",
+    },
+    {
+        title: "Gallery",
+        src: "/images/gallery.png",
+        link: "/gallery",
+    },
 ];

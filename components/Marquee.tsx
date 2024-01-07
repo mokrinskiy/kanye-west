@@ -1,5 +1,6 @@
+"use client"
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Marquee = ({ children }: { children: React.ReactNode }) => {
@@ -9,7 +10,7 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
     let xPercent = 0;
     let direction = 1;
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         requestAnimationFrame(animate);
         gsap.to(slider.current, {
@@ -36,17 +37,17 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
     };
     
     return (
-        <div className="absolute top-[100px]">
+        <div className="absolute max-sm:top-[100px] max-md:top-[170px] top-[100px]">
             <div ref={slider} className="relative whitespace-nowrap flex">
                 <p
                     ref={firstText}
-                    className="uppercase px-20 font-bold text-[350px] font-abril"
+                    className="uppercase px-20 max-lg:text-[300px] max-sm:text-[100px] max-md:text-[150px] font-bold text-[350px] font-abril"
                 >
                     {children}
                 </p>
                 <p
                     ref={secondText}
-                    className="uppercase px-20 font-bold text-[350px] font-abril left-[100%] absolute"
+                    className="uppercase px-20 font-bold max-sm:text-[100px]  max-lg:text-[300px] max-md:text-[150px] text-[350px] font-abril left-[100%] absolute"
                 >
                     {children}
                 </p>
