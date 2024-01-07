@@ -6,22 +6,22 @@ export const nav_items = [
     },
     {
         title: "Music",
-        src: "/images/music.png",
+        src: "/images/music.jpg",
         link: "/music",
     },
     {
         title: "Fashion",
-        src: "/images/fashion.png",
+        src: "/images/fashion.webp",
         link: "/fashion",
     },
     {
         title: "Performances",
-        src: "/images/performances.png",
+        src: "/images/performances.jpg",
         link: "/performances",
     },
     {
         title: "Gallery",
-        src: "/images/gallery.png",
+        src: "/images/gallery.jpg",
         link: "/gallery",
     },
 ];
