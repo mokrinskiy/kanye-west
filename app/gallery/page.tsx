@@ -69,22 +69,28 @@ const Page = () => {
                 className="w-full h-full absolute [&:nth-child(3)]:brightness-[0.7]"
             >
                 <Image
-                    className="absolute [&:nth-child(1)]:left-[85%] [&:nth-child(1)]:top-[70%]"
+                    className="absolute [&:nth-child(1)]:left-[85%] [&:nth-child(1)]:top-[30%] w-[300px] max-md:w-[150px]"
                     src={bio}
                     alt="image1"
-                    width={300}
+                    style={{
+                        maxWidth: "300px",
+                    }}
                 />
                 <Image
-                    className="absolute [&:nth-child(2)]:left-[70%] [&:nth-child(2)]:top-[-5%]"
+                    className="absolute [&:nth-child(2)]:left-[70%] [&:nth-child(2)]:top-[-5%] max-md:w-[75px]"
                     src={gallery}
                     alt="image1"
-                    width={150}
+                    style={{
+                        maxWidth: "150px",
+                    }}
                 />
                 <Image
-                    className="absolute [&:nth-child(3)]:left-[30%] [&:nth-child(3)]:top-[70%]"
+                    className="absolute [&:nth-child(3)]:left-[30%] [&:nth-child(3)]:top-[70%] max-md:w-[100px]"
                     src={performances}
                     alt="image1"
-                    width={200}
+                    style={{
+                        maxWidth: "200px",
+                    }}
                 />
             </div>
             {/* plan2 */}
@@ -93,16 +99,20 @@ const Page = () => {
                 className="w-full h-full absolute [&:nth-child(3)]:brightness-[0.7]"
             >
                 <Image
-                    className="absolute [&:nth-child(1)]:left-[20%] [&:nth-child(1)]:top-[0%]"
+                    className="absolute [&:nth-child(1)]:left-[20%] [&:nth-child(1)]:top-[0%] max-md:w-[100px]"
                     src={bio}
                     alt="image1"
-                    width={200}
+                    style={{
+                        maxWidth: "200px",
+                    }}
                 />
                 <Image
-                    className="absolute [&:nth-child(2)]:left-[-5%] [&:nth-child(2)]:top-[15%]"
+                    className="absolute [&:nth-child(2)]:left-[-5%] [&:nth-child(2)]:top-[15%] max-md:w-[115px]"
                     src={gallery}
                     alt="image1"
-                    width={230}
+                    style={{
+                        maxWidth: "230px",
+                    }}
                 />
             </div>
             {/* plan3 */}
@@ -111,16 +121,20 @@ const Page = () => {
                 className="w-full h-full absolute [&:nth-child(3)]:brightness-[1.2]"
             >
                 <Image
-                    className="absolute [&:nth-child(1)]:left-[60%] [&:nth-child(1)]:top-[60%]"
+                    className="absolute [&:nth-child(1)]:left-[60%] [&:nth-child(1)]:top-[60%] max-md:w-[75px]"
                     src={bio}
                     alt="image1"
-                    width={150}
+                    style={{
+                        maxWidth: "150px",
+                    }}
                 />
                 <Image
-                    className="absolute [&:nth-child(2)]:left-[5%] [&:nth-child(2)]:top-[70%]"
+                    className="absolute [&:nth-child(2)]:left-[2%] [&:nth-child(2)]:top-[67%] max-md:w-[150px] max-md:[&:nth-child(2)]:top-[45%]"
                     src={gallery}
                     alt="image1"
-                    width={300}
+                    style={{
+                        maxWidth: "300px",
+                    }}
                 />
             </div>
             {/* title */}
