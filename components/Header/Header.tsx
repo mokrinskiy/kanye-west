@@ -1,15 +1,21 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ModeToggle } from "../ModeToogle";
 import { AnimatePresence, motion } from "framer-motion";
 import { background, opacity } from "./anim";
 import Nav from "./Nav";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setIsActive(false);
+    }, [pathname]);
 
     return (
         <header className="fixed top-0 w-full z-10">
