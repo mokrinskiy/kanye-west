@@ -2,13 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import BiographyItem from "@/components/BiographyItem";
+import { biography_items } from "@/contentful/biography";
 
 const Page = () => {
     return (
         <div>
             {/* hero */}
             <div className="h-screen w-full flex justify-between border-b-[2px] border-foreground max-md:flex-col">
-                <div className="w-[50vw] max-md:w-[100vw] max-md:mt-[50px] flex items pl-1 relative flex-col justify-end mb-2 text-white">
+                <div className="w-[50vw] max-md:w-[100vw] max-md:mt-[60px] max-md:mb-[20px] flex items pl-1 relative flex-col justify-end mb-2 text-white">
                     <img
                         className="object-cover w-[20vw] max-md:w-[50vw]"
                         alt="bio"
@@ -40,17 +41,23 @@ const Page = () => {
                 </div>
                 <div className="w-[70vw] pl-[6vw] mt-[30vh]">
                     <q className="text-[45px] font-poppins max-lg:text-[35px] max-md:text-[25px] max-sm:text-[20px]">
-                        I am Warhol. I am the No. 1 <b>most impactful artist</b>
+                        I am Warhol. I am the No. 1{" "}
+                        <b>most impactful artist </b>
                         of our generation. I am Shakespeare in the flesh.
                     </q>
                 </div>
             </div>
-            <div className="px-[6vw]">
-                {/* 01 */}
-                <BiographyItem />
+            <div className="px-[6vw] space-y-[25vh]">
+                {biography_items.map((item, index) => (
+                    <BiographyItem
+                        index={index + 1}
+                        images={item.images}
+                        title={item.title}
+                        text={item.text}
+                        key={item.id}
+                    />
+                ))}
             </div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
         </div>
     );
 };
