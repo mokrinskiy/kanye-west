@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect, useRef, useState } from "react";
 import { nav_items } from "@/contentful/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,7 +77,8 @@ export default function HomeNav() {
             </div>
             <div className="mt-[200px] flex flex-col w-full h-auto relative list-container">
                 {nav_items.map((item, index) => (
-                    <div
+                    <Link
+                        href={`${item.link}`}
                         onMouseOver={() => setSelectedProject(index)}
                         className="flex w-full border-t-[1px] justify-end border-foreground"
                         key={index}
@@ -84,7 +86,7 @@ export default function HomeNav() {
                         <p className="flex justify-end mt-[40px] mb-[20px] font-abril uppercase text-[50px] max-md:text-[35px]">
                             {item.title}
                         </p>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
