@@ -1,16 +1,14 @@
 import React from "react";
 import ModalItem from "../ModalItem";
-import { MotionValue, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const StudioAItem = ({
-    x,
     title,
     cover,
     description,
     id,
 }: {
-    x: MotionValue<string>;
     title: string;
     cover: string;
     description: string | undefined;
@@ -19,7 +17,6 @@ const StudioAItem = ({
     return (
         <motion.div
             whileHover={{ scale: 0.98 }}
-            style={{ x }}
             className="flex flex-col h-screen w-[40vw] max-md:w-[70vw] justify-center"
         >
             <ModalItem

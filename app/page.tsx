@@ -6,7 +6,6 @@ import Description from "@/components/Description";
 import HomeNav from "@/components/HomeNav";
 
 export default function Home() {
-    // lenis scroll
     useSmoothScroll();
     return (
         <main className="relative flex overflow-hidden flex-col">

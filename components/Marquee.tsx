@@ -11,28 +11,32 @@ const Marquee = ({ children }: { children: React.ReactNode }) => {
     let direction = 1;
 
     const animate = () => {
-        if (xPercent < -100) {
-            xPercent = 0;
-        } else if (xPercent > 0) {
-            xPercent = -100;
+        if (firstText.current && secondText.current) {
+            if (xPercent < -100) {
+                xPercent = 0;
+            } else if (xPercent > 0) {
+                xPercent = -100;
+            }
+            gsap.set(firstText.current, { xPercent: xPercent });
+            gsap.set(secondText.current, { xPercent: xPercent });
+            requestAnimationFrame(animate);
+            xPercent += 0.1 * direction;
         }
-        gsap.set(firstText?.current, { xPercent: xPercent });
-        gsap.set(secondText?.current, { xPercent: xPercent });
-        requestAnimationFrame(animate);
-        xPercent += 0.1 * direction;
     };
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.to(slider.current, {
-            scrollTrigger: {
-                trigger: document.documentElement,
-                scrub: 0.25,
-                start: 0,
-                end: window.innerHeight,
-            },
-            x: "+=500px",
-        });
+        if (slider.current) {
+            gsap.to(slider.current, {
+                scrollTrigger: {
+                    trigger: document.documentElement,
+                    scrub: 0.25,
+                    start: 0,
+                    end: window.innerHeight,
+                },
+                x: "+=500px",
+            });
+        }
         requestAnimationFrame(animate);
     }, []);
 

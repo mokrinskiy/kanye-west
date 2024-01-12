@@ -90,3 +90,18 @@ export const albums = [
         description: "",
     },
 ];
+
+export const fashion_gallery_images = [
+    "fashion1.jpg",
+    "fashion2.jpg",
+    "fashion3.jpg",
+    "fashion4.jpg",
+    "fashion5.jpg",
+    "fashion6.jpg",
+    "fashion7.jpg",
+    "fashion8.jpg",
+    "fashion9.jpg",
+    "fashion10.jpg",
+    "fashion11.jpg",
+    "fashion12.jpg",
+];
