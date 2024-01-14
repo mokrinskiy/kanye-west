@@ -23,28 +23,28 @@ const ParallaxGallery = () => {
     const images = fashion_gallery_images;
 
     return (
-        <div>
+        <div className="mb-[125px]">
             <div
                 ref={container}
                 className="h-[250vh] bg-foreground flex flex-row  gap-[2vw] p-[2vw] box-border overflow-hidden"
             >
                 <Column
-                    className="top-[-50%]"
+                    className="top-[-20%]"
                     images={[images[8], images[1], images[2]]}
                     y={y1}
                 />
                 <Column
-                    className="top-[-65%]"
+                    className="top-[-25%]"
                     images={[images[3], images[4], images[5]]}
                     y={y2}
                 />
                 <Column
-                    className="top-[-35%]"
+                    className="top-[-15%]"
                     images={[images[7], images[6], images[0]]}
                     y={y3}
                 />
                 <Column
-                    className="top-[-75%]"
+                    className="top-[-30%]"
                     images={[images[9], images[10], images[11]]}
                     y={y4}
                 />

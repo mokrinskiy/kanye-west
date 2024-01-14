@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import bio from "../../public/images/bio.jpg";
+import bio from "../../public/images/bio/bio.jpg";
 import gallery from "../../public/images/gallery.jpg";
 import performances from "../../public/images/performances.jpg";
 import gsap from "gsap";

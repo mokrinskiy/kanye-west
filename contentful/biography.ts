@@ -6,7 +6,11 @@ export const biography_items = [
             "Kanye Omari West was born in Atlanta, Georgia, on June 8, 1977. His father, Ray, was a photojournalist for the Atlanta Journal newspaper and was also politically active in the Black Panthers; he later became a Christian counselor. West's mother, Donda, was a teacher who became a professor of English at Chicago State University, and eventually, her son's manager before she died at the age of 58 from heart disease after cosmetic surgery in 2007. Her passing would profoundly affect West musically as well as personally.",
             "Ray and Donda divorced amicably when West was three. After that he was raised on Chicago's middle-class South Shore neighborhood by his mother, and spent summers with his father. At the age of 10, West moved for a year with Donda to China, where she taught as part of a university-exchange program; he was the only foreigner in his class. After returning to Chicago, West was drawn to the South Side's hip-hop scene, and he befriended the DJ and producer No I.D., who became his mentor. West graduated from Polaris High School and won a scholarship to study at Chicago's American Academy of Art — but dropped out of college altogether to pursue music, an act that would inform the title of his first solo album years later.",
         ],
-        images: ["/images/bio1.jpg", "/images/bio2.jpg", "/images/bio3.jpg"],
+        images: [
+            "/images/bio/bio1.jpg",
+            "/images/bio/bio2.jpg",
+            "/images/bio/bio3.jpg",
+        ],
     },
     {
         id: 2,
@@ -23,7 +27,7 @@ export const biography_items = [
         text: [
             "The album was finally released in February 2004 — it sold 2.6 million copies and made West a star. Titled The College Dropout, it broke the gangsta-rap mold, with themes including consumerism (he was critical of it back then), racism, higher education and his religious beliefs. On the single 'Jesus Walks' he rapped, 'They say you can rap about anything except for Jesus/That means guns, sex, lies, videotapes/But if I talk about God, my record won't get played.' The College Dropout peaked at No. 2 on the Billboard Hot 200 chart, and West received 10 Grammy nominations, winning three awards including Best Rap Song for 'Jesus Walks' and Best Rap Album. Shortly after the album was released, West founded his record label, GOOD music — an acronym for Getting Out Our Dreams — in conjunction with Sony BMG. He would put out music by John Legend, Big Sean, Common, Pusha-T and more.",
         ],
-        images: ["/images/bio4.jpg"],
+        images: ["/images/bio/bio4.jpg"],
     },
     {
         id: 4,
@@ -48,7 +52,7 @@ export const biography_items = [
         text: [
             "West was on top of the world, hailed as the artist who had killed gangsta rap. And then, in November 2007, tragedy struck. His beloved mother, Donda, died from a heart attack following cosmetic surgery. During his first concert following the funeral, he dedicated a performance of 'Hey Mama' to her. Months later, West broke up with his fiancée, Alexis Phifer. His next album, 808s & Heartbreak, released 12 months after his mom died, was shot through with grief, pain and alienation. West even abandoned rapping altogether, preferring to sing through an Auto-Tune vocal processor, which lent his voice a robotic tone — a technique now ubiquitous in hip hop. He classified the new album as 'pop art' (not to be confused with the visual art movement) and announced: 'Hip hop is over for me.' (It wasn't — he won two Grammys for guest raps he made that year, on Estelle's 'American Boy' and TI's 'Swagga Like Us.')",
         ],
-        images: ["/images/bio5.jpg"],
+        images: ["/images/bio/bio5.jpg"],
     },
     {
         id: 7,
@@ -64,7 +68,11 @@ export const biography_items = [
         text: [
             "West returned to music in November 2010 with his fifth album — with paranoid celebrity and rampant consumption the dominant themes: it was a bombastic and towering monument to self-aggrandizement that sounded 'like an instant greatest hits' according to Pitchfork. It was the best and worst of Kanye West rolled into one: a magnum opus that bordered on the delusional. It yielded four singles, including 'Monster,' on which West, Jay Z and Rick Ross were memorably battered into runners-up spots by a blistering guest verse from Nicki Minaj. West and his old sparring partner Jay Z then released a collaborative album, Watch the Throne in 2011 — it yielded seven singles including 'Otis' and 'Niggas in Paris'; and added three more Grammy wins to West's and Jay Z's respective hauls.",
         ],
-        images: ["/images/bio6.jpg", "/images/bio7.jpg", "/images/bio8.jpg"],
+        images: [
+            "/images/bio/bio6.jpg",
+            "/images/bio/bio7.jpg",
+            "/images/bio/bio8.jpg",
+        ],
     },
     {
         id: 10,
@@ -80,7 +88,7 @@ export const biography_items = [
             "Anyone listening to West's sixth album, Yeezus, which came out in June 2013, would hear little evidence that the rapper was living an idyllic existence. Sonically the album was abrasive, raw and almost entirely melody-free — West had enlisted the producer Rick Rubin to make wholesale changes just days before the release. Lyrically, West sounded paranoid and narcissistic to the point of bathos, especially on 'I Am a God,' which contained the immortal line 'Hurry up with my damn croissants.'",
             "West claimed the album was an 'attack on the commercial,' and certainly it contained little that was radio-friendly — barring the magnificent glam-rock-inspired single, 'Black Skinhead' (the first of only two singles from the album). Yeezus remains the only West album to have sold fewer than 1 million copies in the US. Yet it was critically well received — not least by the rock legend Lou Reed, who told Rolling Stone that 'Each track is like making a movie... The guy really, really, really is talented.'",
         ],
-        images: ["/images/bio9.jpg"],
+        images: ["/images/bio/bio9.jpg"],
     },
     {
         id: 12,
@@ -97,7 +105,11 @@ export const biography_items = [
             "There was more controversy in the run-up to his seventh album, The Life of Pablo. Before its release on February 14, 2016, West hit the headlines for a series of controversial tweets - including one that proclaimed Bill Cosby, on trial for drugging and raping women, to be innocent. He started a beef with the rapper Wiz Khalifa, whom he mistakenly believed to have criticized his wife, Kim Kardashian ('I am your OG and I will be respected as such,' West tweeted.). He also apologized to Michael Jordan for appearing to diss the basketball legend in his lyrics. And then the day after his album came out, West bizarrely urged his followers to lobby Facebook founder Mark Zuckerberg to invest $1 billion into West's 'ideas.' He also claimed to be $53 million in debt.",
             "The album itself was another change of direction, and another triumph. It covered a much broader sonic sweep than Yeezus, incorporating a vast array of sounds, styles and influences, from trap to gospel to Auto-Tune crooning, to avant-pop, classic soul and dancehall. Guest vocalists included Frank Ocean, Chance the Rapper, Rihanna, Desiigner and Kid Cudi. It became West's sixth solo album in succession to debut at No. 1 on the Billboard 200 chart.",
         ],
-        images: ["/images/bio10.jpg", "/images/bio11.jpg", "/images/bio12.jpg"],
+        images: [
+            "/images/bio/bio10.jpg",
+            "/images/bio/bio11.jpg",
+            "/images/bio/bio12.jpg",
+        ],
     },
     {
         id: 14,
@@ -126,7 +138,7 @@ export const biography_items = [
             "In early 2019, West debuted his Sunday Service sessions — performances of the rapper and associates singing gospel versions of his hit songs from various locations. Little was known about these invite-only sessions, with the public getting glimpses via social media clips.",
             "West then brought a larger-scale version of his new project to Coachella in April for a special Easter Sunday show, in which he and a large contingent of singers and dancers, dressed in matching mauve robes, performed atop a man-made mountain.",
         ],
-        images: ["/images/bio13.jpg"],
+        images: ["/images/bio/bio13.jpg"],
     },
     {
         id: 17,
@@ -146,6 +158,6 @@ export const biography_items = [
             "On October 12, he dropped his first campaign video urging voters to write his in on their ballots.",
             "West eventually conceded and alluded to a presidential run in 2024.",
         ],
-        images: ["/images/bio14.jpg"],
+        images: ["/images/bio/bio14.jpg"],
     },
 ];

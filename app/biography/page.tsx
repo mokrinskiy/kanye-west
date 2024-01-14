@@ -13,12 +13,12 @@ const Page = () => {
                     <img
                         className="object-cover w-[20vw] max-md:w-[50vw]"
                         alt="bio"
-                        src="/Kanye West’s.svg"
+                        src="/svgs/Kanye West.svg"
                     />
                     <img
                         className="object-cover w-[45vw] max-md:w-[100vw]"
                         alt="bio"
-                        src="/BIOGRAPHY.svg"
+                        src="/svgs/BIOGRAPHY.svg"
                     />
                 </div>
                 <div className="w-[50vw] h-full relative max-md:w-[100vw]">
