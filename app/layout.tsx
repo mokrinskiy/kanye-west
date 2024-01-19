@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import PageScrollProgress from "@/components/PageScrollProgress";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer";
 
 export const abril_fatface = Abril_Fatface({
     weight: "400",
@@ -61,6 +62,7 @@ export default function RootLayout({
                 >
                     <Header />
                     {children}
+                    <Footer />
                     <PageScrollProgress />
                 </ThemeProvider>
             </body>
