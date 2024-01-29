@@ -1,7 +1,7 @@
 export const nav_items = [
     {
         title: "Biography",
-        src: "/images/bio.jpg",
+        src: "/images/bio/bio.jpg",
         link: "/biography",
     },
     {

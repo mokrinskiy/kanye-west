@@ -28,6 +28,7 @@ function AnimatedText({ children }: { children: React.ReactNode }) {
             initial={{ x: "-300px", opacity: 0 }}
             whileInView={{ x: "0px", opacity: 1 }}
             transition={{ duration: 1.25 }}
+            viewport={{ once: true }}
             className="text-2xl max-lg:text-xl font-poppins m-0"
         >
             {children}

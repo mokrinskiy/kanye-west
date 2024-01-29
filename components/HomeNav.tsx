@@ -26,7 +26,7 @@ export default function HomeNav() {
                     pin: true,
                     pinSpacing: false,
                     start: "top",
-                    end: "bottom+=300px",
+                    end: "bottom+=2000px",
                 },
             });
         });

@@ -28,7 +28,7 @@ const Page = () => {
                     <Image
                         fill={true}
                         className="object-cover"
-                        src="/images/bio.jpg"
+                        src="/images/fashion.webp"
                         alt="kanye"
                         sizes="auto"
                     />

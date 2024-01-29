@@ -26,7 +26,7 @@ const ParallaxGallery = () => {
         <div className="mb-[125px]">
             <div
                 ref={container}
-                className="h-[250vh] bg-foreground flex flex-row  gap-[2vw] p-[2vw] box-border overflow-hidden"
+                className="h-[250vh] bg-black flex flex-row  gap-[2vw] p-[2vw] box-border overflow-hidden"
             >
                 <Column
                     className="top-[-20%]"
@@ -34,7 +34,7 @@ const ParallaxGallery = () => {
                     y={y1}
                 />
                 <Column
-                    className="top-[-25%]"
+                    className="top-[-30%]"
                     images={[images[3], images[4], images[5]]}
                     y={y2}
                 />
